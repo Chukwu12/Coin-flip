@@ -1,11 +1,11 @@
 let coin = document.querySelector('.coin');
-let flipCoin = document.querySelector('#flip-coin')
-let reset = document.querySelector('.reset')
+let flipCoin = document.querySelector('#flipCoin')
+let reset = document.querySelector('#reset')
 
 let heads = 0;
 let tails = 0;
 
-flip-coin.addEventListener(click, () => {
+flipCoin.addEventListener('click', () => {
  let i = Math.floor(Math.random() * 2);
 
  coin.style.animation = 'none';
@@ -23,13 +23,13 @@ flip-coin.addEventListener(click, () => {
  }, 100);
  tails++;
  }
- setTimeout(updateStats, 3000); 
+ setTimeout(updateStates, 3000); 
    disablebutton(); 
 });
 
 
 function updateStates() {
-    document.querySelector('#head-count').textContent = `Heads: ${heads}`
-    document.querySelector('#tail-count').textContent = `Tails: ${tails}`
+    document.querySelector('#head-count').textContent = `Heads: ${heads}`;
+    document.querySelector('#tail-count').textContent = `Tails: ${tails}`;
 }
     
