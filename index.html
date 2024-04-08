@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Coin Flip</title>
+</head>
+<body>
+    <section>
+        <div class="coin-container">
+            <h1>Heads vs Tails</h1>
+            <!-- making the coin using 2 images -->
+            <div class="coin" id="coin">
+                <div class="head">
+                    <img src="images/head.png" alt="coin head img">
+                </div>
+                
+                <div class="tails">
+                    <img src="images/tails.png" alt="coin tail img">
+                </div>
+            </div>
+
+            <div class="stats-keeper">
+                <p id="head-count">Heads: 0</p>
+                <p id="tail-count">Tails: 0</p>
+            </div>
+
+            <div class="coin-button">
+                <button id="flip-coin">Flip coin</button>
+                <button id="reset">Reset</button>
+            </div>
+            
+        </div>
+    </section>
+    <!-- js -->
+    <script>src="js/main.js"</script>
+</body>
+</html>

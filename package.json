@@ -1,0 +1,22 @@
+{
+  "name": "coin-flip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chukwu12/Coin-flip.git"
+  },
+  "author": "Okechukwu Egeruoh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chukwu12/Coin-flip/issues"
+  },
+  "homepage": "https://github.com/Chukwu12/Coin-flip#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
