@@ -37,7 +37,7 @@ cd coin-flip-game
 
 ## Demo
 
-You can see a live demo of the game [](https://github.com/Chukwu12/Coin-flip.git).
+You can see a live demo of the game [https://naija-coinflip.netlify.app]().
 
 ## Contributing
 
