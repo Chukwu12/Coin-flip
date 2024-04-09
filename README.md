@@ -19,7 +19,7 @@ This is a simple web-based coin flip game where the randomization happens server
 ## Installation
 
 1. Clone the repository to your local machine:
-git clone https://github.com/Chukwu12/Coin-flip-game.git
+git clone https://github.com/Chukwu12/Coin-flip.git
 
 
 2. Navigate into the project directory:
