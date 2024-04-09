@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Chukwu12/Coin-flip#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "figlet": "^1.7.0"
   }
 }
