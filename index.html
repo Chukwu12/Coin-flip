@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Coin Flip</title>
 </head>
 <body>
-    <section>
-        <div class="coin-container">
-            <h1>
-               Heads vs Tails
-            </h1>
-            <!-- making the coin using 2 images -->
-            <div class="coin" id="coin">
+    <main class="page-shell">
+        <section class="coin-container" aria-label="Coin flip simulator">
+            <p class="eyebrow">Probability Playground</p>
+            <h1>Heads vs Tails</h1>
+            <p class="subtitle">One tap. One spin. Pure chance.</p>
+
+            <!-- Coin element built with front and back images -->
+            <div class="coin" id="coin" aria-live="polite">
                 <div class="head">
-                    <img src="images/head.png" alt="coin head img">
+                    <img src="images/head.png" alt="Heads side of coin">
                 </div>
-                
+
                 <div class="tails">
-                    <img src="images/tails.png" alt="coin tail img">
+                    <img src="images/tails.png" alt="Tails side of coin">
                 </div>
             </div>
 
-            <div class="stats-keeper">
+            <div class="stats-keeper" role="status" aria-live="polite">
                 <p id="head-count">Heads: 0</p>
                 <p id="tail-count">Tails: 0</p>
             </div>
 
+            <p class="last-result" id="last-result">Last result: -</p>
+
             <div class="coin-button">
-                <button id="flipCoin">Flip coin</button>
-                <button id="reset">Reset</button>
+                <button id="flipCoin" type="button">Flip Coin</button>
+                <button id="reset" type="button">Reset</button>
             </div>
-            
-        </div>
-    </section>
+
+            <label class="sound-toggle" for="soundToggle">
+                <input id="soundToggle" type="checkbox" checked>
+                <span>Sound on</span>
+            </label>
+        </section>
+    </main>
     <!-- js -->
     <script type="text/javascript" src="/js/main.js"></script>
 </body>
